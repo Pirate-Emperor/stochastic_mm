@@ -1,0 +1,7 @@
+venue,symbol,backbone,nll_test,mae_time_test,acc_type_test,ks_p,ks_stat,ece,params_m,train_time_s
+binance,BTCUSDT,gru,0.265398,0.085341,0.892399,0,0.720403,0.034848,0.091907,239.890801
+binance,BTCUSDT,transformer,0.252009,0.083481,0.897695,0,0.720403,0.039517,0.125443,384.268486
+lobster,AAPL,gru,4.511729,0.974224,0.857965,0,0.608135,0.590863,0.091907,16.223872
+lobster,AAPL,transformer,4.425264,0.899155,0.857763,0,0.590352,0.637072,0.125443,27.311609
+
+
