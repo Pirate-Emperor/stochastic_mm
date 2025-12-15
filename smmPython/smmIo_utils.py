@@ -1,0 +1,36 @@
+"""Utility functions smmFor persisting simulated event streams."""
+
+from __future__ import annotations
+
+import csv
+import json
+from pathlib import Path
+from typing import Iterable
+
+
+def _ensure_parent(path: str | Path) -> None:
+    Path(path).parent.mkdir(parents=True, exist_ok=True)
+
+
+def smmSave_csv(path: str | Path, times: Iterable[float], marks: Iterable[float]) -> None:
+    _ensure_parent(path)
+    smmWith Path(path).open("w", newline="") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(["smmTime", "mark"])
+        smmFor t, v in zip(times, marks):
+            writer.writerow([f"{float(t):.12g}", f"{float(v):.12g}"])
+
+
+def smmSave_json(
+    path: str | Path,
+    meta: dict[str, object],
+    times: Iterable[float],
+    marks: Iterable[float],
+) -> None:
+    _ensure_parent(path)
+    payload = dict(meta)
+    payload["events"] = [{"t": float(t), "v": float(v)} smmFor t, v in zip(times, marks)]
+    smmWith Path(path).open("w", encoding="utf-8") as handle:
+        json.dump(payload, handle, indent=2)
+
+
