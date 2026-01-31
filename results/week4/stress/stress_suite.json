@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "schema_version": "hftsim/v0",
+    "generated_at": "2025-10-12T09:23:37Z",
+    "generator": "run_stress_suite",
+    "git_commit": "6e1301e41678033c85e0855ae8fcccec8e433467",
+    "seed": 2024,
+    "extra": {
+      "base_messages": 10000,
+      "base_rate_hz": 5000.0,
+      "symbol": "SYN-STRESS"
+    }
+  },
+  "data": {
+    "scenarios": [
+      {
+        "multiplier": 1,
+        "message_count": 10000,
+        "wall_time_s": 0.4931781660125125,
+        "peak_memory_kb": 421.197265625,
+        "throughput_msgs_per_s": 20276.64785092349,
+        "avg_latency_ns": 31155.2235,
+        "p95_latency_ns": 40041,
+        "p99_latency_ns": 59083,
+        "max_latency_ns": 169459,
+        "sequence_ok": true,
+        "orphan_cancels": 0,
+        "orphan_executes": 0,
+        "duplicate_order_ids": 0,
+        "sequence_errors": [],
+        "latency_histogram": [
+          {
+            "upper_ns": 100,
+            "count": 0
+          },
+          {
+            "upper_ns": 250,
+            "count": 0
+          },
+          {
+            "upper_ns": 500,
+            "count": 0
+          },
+          {
+            "upper_ns": 1000,
+            "count": 0
+          },
+          {
+            "upper_ns": 2500,
+            "count": 0
+          },
+          {
+            "upper_ns": 5000,
+            "count": 0
+          },
+          {
+            "upper_ns": 10000,
+            "count": 0
+          },
+          {
+            "upper_ns": 25000,
+            "count": 2581
+          },
+          {
+            "upper_ns": 50000,
+            "count": 7248
+          },
+          {
+            "upper_ns": 100000,
+            "count": 141
+          },
+          {
+            "upper_ns": 250000,
+            "count": 30
+          }
+        ],
+        "add_order_events": 5000,
+        "delete_order_events": 4999,
+        "execute_order_events": 1,
+        "order_to_trade_ratio": 5000.0
+      },
+      {
+        "multiplier": 10,
+        "message_count": 100000,
+        "wall_time_s": 4.856534458027454,
+        "peak_memory_kb": 3543.3701171875,
+        "throughput_msgs_per_s": 20590.81447156381,
+        "avg_latency_ns": 31543.56532,
+        "p95_latency_ns": 41250,
+        "p99_latency_ns": 65541,
+        "max_latency_ns": 1018834,
+        "sequence_ok": true,
+        "orphan_cancels": 0,
+        "orphan_executes": 0,
+        "duplicate_order_ids": 0,
+        "sequence_errors": [],
+        "latency_histogram": [
+          {
+            "upper_ns": 100,
+            "count": 0
+          },
+          {
+            "upper_ns": 250,
+            "count": 0
+          },
+          {
+            "upper_ns": 500,
+            "count": 0
+          },
+          {
+            "upper_ns": 1000,
+            "count": 0
+          },
+          {
+            "upper_ns": 2500,
+            "count": 0
+          },
+          {
+            "upper_ns": 5000,
+            "count": 0
+          },
+          {
+            "upper_ns": 10000,
+            "count": 0
+          },
+          {
+            "upper_ns": 25000,
+            "count": 20288
+          },
+          {
+            "upper_ns": 50000,
+            "count": 77401
+          },
+          {
+            "upper_ns": 100000,
+            "count": 2008
+          },
+          {
+            "upper_ns": 250000,
+            "count": 287
+          },
+          {
+            "upper_ns": 500000,
+            "count": 10
+          },
+          {
+            "upper_ns": 1000000,
+            "count": 5
+          },
+          {
+            "upper_ns": 2500000,
+            "count": 1
+          }
+        ],
+        "add_order_events": 49999,
+        "delete_order_events": 49997,
+        "execute_order_events": 4,
+        "order_to_trade_ratio": 12499.75
+      },
+      {
+        "multiplier": 100,
+        "message_count": 1000000,
+        "wall_time_s": 45.68678433299647,
+        "peak_memory_kb": 35624.3955078125,
+        "throughput_msgs_per_s": 21888.167762285862,
+        "avg_latency_ns": 29456.762627,
+        "p95_latency_ns": 36167,
+        "p99_latency_ns": 47416,
+        "max_latency_ns": 8917375,
+        "sequence_ok": true,
+        "orphan_cancels": 0,
+        "orphan_executes": 0,
+        "duplicate_order_ids": 0,
+        "sequence_errors": [],
+        "latency_histogram": [
+          {
+            "upper_ns": 100,
+            "count": 0
+          },
+          {
+            "upper_ns": 250,
+            "count": 0
+          },
+          {
+            "upper_ns": 500,
+            "count": 0
+          },
+          {
+            "upper_ns": 1000,
+            "count": 0
+          },
+          {
+            "upper_ns": 2500,
+            "count": 0
+          },
+          {
+            "upper_ns": 5000,
+            "count": 0
+          },
+          {
+            "upper_ns": 10000,
+            "count": 0
+          },
+          {
+            "upper_ns": 25000,
+            "count": 275239
+          },
+          {
+            "upper_ns": 50000,
+            "count": 716879
+          },
+          {
+            "upper_ns": 100000,
+            "count": 6942
+          },
+          {
+            "upper_ns": 250000,
+            "count": 900
+          },
+          {
+            "upper_ns": 500000,
+            "count": 23
+          },
+          {
+            "upper_ns": 1000000,
+            "count": 11
+          },
+          {
+            "upper_ns": 2500000,
+            "count": 4
+          },
+          {
+            "upper_ns": 5000000,
+            "count": 1
+          },
+          {
+            "upper_ns": 10000000,
+            "count": 1
+          }
+        ],
+        "add_order_events": 499997,
+        "delete_order_events": 499994,
+        "execute_order_events": 9,
+        "order_to_trade_ratio": 55555.22222222222
+      }
+    ]
+  }
+}

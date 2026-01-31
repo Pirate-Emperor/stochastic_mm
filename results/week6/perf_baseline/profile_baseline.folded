@@ -1,0 +1,11 @@
+Hawkes::draw_dimension 43.0640
+Hawkes::sample_next 567.9380
+SmmSimulatorCore::run;hawkes_sample_next 682.1410
+SmmSimulatorCore::run;latency_queue_push 40.9420
+SmmSimulatorCore::run;flush_ready 1327.5380
+SmmOrderBook::match 124.3860
+SmmSimulatorCore::run;flush_ready;SmmOrderBook::match 239.9790
+SmmSimulatorCore::run;flush_ready;SmmOrderBook::addLimitOrder 104.0770
+SmmExecutionEngine::record_execution 115.9320
+SmmSimulatorCore::run;flush_ready;SmmExecutionEngine::record_execution 233.8900
+SmmSimulatorCore::run 7955.3340

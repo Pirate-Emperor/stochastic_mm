@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "schema_version": "hftsim/v0",
+    "generated_at": "2025-10-12T09:22:42Z",
+    "generator": "benchmark_architectures",
+    "git_commit": "6e1301e41678033c85e0855ae8fcccec8e433467",
+    "seed": 2024,
+    "extra": {
+      "message_count": 20000,
+      "runs_per_variant": 3,
+      "data_path": "data/lobster/LOBSTER_SampleFile_AAPL_2012-06-21_10/AAPL_2012-06-21_34200000_57600000_message_10.csv",
+      "symbol": "AAPL"
+    }
+  },
+  "data": {
+    "parameters": {
+      "message_count": 20000,
+      "runs_per_variant": 3,
+      "data": "data/lobster/LOBSTER_SampleFile_AAPL_2012-06-21_10/AAPL_2012-06-21_34200000_57600000_message_10.csv",
+      "symbol": "AAPL"
+    },
+    "results": [
+      {
+        "variant": "single",
+        "iteration": 0,
+        "message_count": 20000,
+        "wall_time_s": 1.6003849579719827,
+        "throughput_msg_s": 12496.993239266707,
+        "smmDigest": "79067c526bee82c945448810817a8e7fba9c91f9e86caf6a7111c44ca11ccba4",
+        "fill_count": 4,
+        "fill_volume": 20.0,
+        "avg_latency_ns": 0.0,
+        "p95_latency_ns": 0,
+        "p99_latency_ns": 0,
+        "max_latency_ns": 0,
+        "matching_avg_ns": 29297.0139,
+        "message_avg_ns": 78330.0974
+      },
+      {
+        "variant": "single",
+        "iteration": 1,
+        "message_count": 20000,
+        "wall_time_s": 1.5555944170046132,
+        "throughput_msg_s": 12856.821663394212,
+        "smmDigest": "79067c526bee82c945448810817a8e7fba9c91f9e86caf6a7111c44ca11ccba4",
+        "fill_count": 4,
+        "fill_volume": 20.0,
+        "avg_latency_ns": 0.0,
+        "p95_latency_ns": 0,
+        "p99_latency_ns": 0,
+        "max_latency_ns": 0,
+        "matching_avg_ns": 28806.39325,
+        "message_avg_ns": 76116.35905
+      },
+      {
+        "variant": "single",
+        "iteration": 2,
+        "message_count": 20000,
+        "wall_time_s": 1.5963978749932721,
+        "throughput_msg_s": 12528.20510055132,
+        "smmDigest": "79067c526bee82c945448810817a8e7fba9c91f9e86caf6a7111c44ca11ccba4",
+        "fill_count": 4,
+        "fill_volume": 20.0,
+        "avg_latency_ns": 0.0,
+        "p95_latency_ns": 0,
+        "p99_latency_ns": 0,
+        "max_latency_ns": 0,
+        "matching_avg_ns": 28887.94135,
+        "message_avg_ns": 78175.2122
+      },
+      {
+        "variant": "concurrent",
+        "iteration": 0,
+        "message_count": 20000,
+        "wall_time_s": 2.8812158329819795,
+        "throughput_msg_s": 6941.513985538719,
+        "smmDigest": "79067c526bee82c945448810817a8e7fba9c91f9e86caf6a7111c44ca11ccba4",
+        "fill_count": 4,
+        "fill_volume": 20.0,
+        "avg_latency_ns": 0.0,
+        "p95_latency_ns": 0,
+        "p99_latency_ns": 0,
+        "max_latency_ns": 0,
+        "matching_avg_ns": 35147.7811,
+        "message_avg_ns": null
+      },
+      {
+        "variant": "concurrent",
+        "iteration": 1,
+        "message_count": 20000,
+        "wall_time_s": 2.9265107919927686,
+        "throughput_msg_s": 6834.07696794491,
+        "smmDigest": "79067c526bee82c945448810817a8e7fba9c91f9e86caf6a7111c44ca11ccba4",
+        "fill_count": 4,
+        "fill_volume": 20.0,
+        "avg_latency_ns": 0.0,
+        "p95_latency_ns": 0,
+        "p99_latency_ns": 0,
+        "max_latency_ns": 0,
+        "matching_avg_ns": 35440.7442,
+        "message_avg_ns": null
+      },
+      {
+        "variant": "concurrent",
+        "iteration": 2,
+        "message_count": 20000,
+        "wall_time_s": 2.75753029200132,
+        "throughput_msg_s": 7252.866834505267,
+        "smmDigest": "79067c526bee82c945448810817a8e7fba9c91f9e86caf6a7111c44ca11ccba4",
+        "fill_count": 4,
+        "fill_volume": 20.0,
+        "avg_latency_ns": 0.0,
+        "p95_latency_ns": 0,
+        "p99_latency_ns": 0,
+        "max_latency_ns": 0,
+        "matching_avg_ns": 34223.21185,
+        "message_avg_ns": null
+      }
+    ],
+    "smmSummary": {
+      "single": {
+        "runs": 3,
+        "unique_digests": 1,
+        "avg_wall_time_s": 1.584125749989956,
+        "avg_throughput_msg_s": 12627.340001070746,
+        "avg_matching_ns": 28997.116166666667,
+        "avg_message_ns": 77540.55621666666
+      },
+      "concurrent": {
+        "runs": 3,
+        "unique_digests": 1,
+        "avg_wall_time_s": 2.8550856389920227,
+        "avg_throughput_msg_s": 7009.485929329632,
+        "avg_matching_ns": 34937.245716666665
+      }
+    }
+  }
+}

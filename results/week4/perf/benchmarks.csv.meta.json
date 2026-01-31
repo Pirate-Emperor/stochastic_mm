@@ -1,0 +1,12 @@
+{
+  "schema_version": "hftsim/v0",
+  "generated_at": "2025-10-12T09:22:24Z",
+  "generator": "run_benchmarks",
+  "git_commit": "6e1301e41678033c85e0855ae8fcccec8e433467",
+  "seed": 42,
+  "extra": {
+    "baseline_messages": 2000,
+    "symbol": "AAPL",
+    "data_path": "data/lobster/LOBSTER_SampleFile_AAPL_2012-06-21_10/AAPL_2012-06-21_34200000_57600000_message_10.csv"
+  }
+}
